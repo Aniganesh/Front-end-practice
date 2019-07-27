@@ -1,0 +1,373 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h2 {
+    float: left;
+    margin: 30px 0;
+    line-height: 24px;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+}
+
+.eff, .eff>span {
+    position: relative;
+    text-decoration: none;
+    line-height: 24px;
+    color: inherit;
+}
+
+.eff:before, .eff:after, .eff>span:before, .eff>span:after {
+    content: "";
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.effect1 {
+    padding-top: 10px;
+}
+
+.effect1:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e60023;
+    transform: scaleX(0);
+}
+
+.effect1:hover:before {
+    transform: scaleX(1);
+}
+
+.effect2 {
+    padding: 10px;
+}
+
+.effect2:before, .effect2:after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #e60023;
+}
+
+.effect2:before {
+    border-width: 2px 0 2px 0;
+    transform: scaleX(0);
+}
+
+.effect2:after {
+    border-width: 0 2px 0 2px;
+    transform: scaleY(0)
+}
+
+.effect2:hover:after, .effect2:hover:before {
+    transform: scale(1, 1);
+}
+
+.effect3 {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.effect3:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e60023;
+    transform: translateX(-100%);
+}
+
+.effect3:hover:before {
+    transform: translateX(0);
+}
+
+.effect4 {
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect4:before, .effect4:after {
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e60023;
+}
+
+.effect4:before {
+    bottom: 0;
+    transform: translateX(-100%);
+}
+
+.effect4:after {
+    top: 0;
+    transform: translateX(100%);
+}
+
+.effect4:hover:after, .effect4:hover:before {
+    transform: translateX(0);
+}
+
+.effect5 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect5:before, .effect5:after {
+    right: 0;
+    bottom: 0;
+    background: #e60023;
+}
+
+.effect5:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+}
+
+.effect5:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.effect5>span {
+    display: block;
+    padding: 10px;
+}
+
+.effect5>span:before, .effect5>span:after {
+    left: 0;
+    top: 0;
+    background: #e60023;
+}
+
+.effect5>span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+}
+
+.effect5>span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.effect5:hover:after, .effect5:hover:before, .effect5:hover>span:before, .effect5:hover>span:after {
+    transform: translate(0, 0);
+}
+
+.effect6 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect6:before, .effect6:after {
+    right: 0;
+    bottom: 0;
+    background: #e60023;
+    transition: transform .3s ease;
+}
+
+.effect6:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+    transition-delay: 0.9s;
+}
+
+.effect6:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+    transition-delay: .6s;
+}
+
+.effect6>span {
+    display: block;
+    padding: 10px;
+}
+
+.effect6>span:before {
+    width: 100%;
+    height: 2px;
+    background: #e60023;
+    transform: translateX(100%);
+    transition-delay: .3s;
+}
+
+.effect6>span:after {
+    width: 2px;
+    height: 100%;
+    background: #e60023;
+    transform: translateY(-100%);
+    transition-delay: 0s;
+}
+
+.effect6>span:after, .effect6>span:before {
+    left: 0;
+    top: 0;
+}
+
+.effect6:hover:after, .effect6:hover:before, .effect6>span:hover:before, .effect6>span:hover:after {
+    transform: translate(0, 0);
+}
+
+.effect6:hover:before {
+    transition-delay: 0s;
+}
+
+.effect6:hover:after {
+    transition-delay: .3s;
+}
+
+.effect6:hover>span:before {
+    transition-delay: .6s;
+}
+
+.effect6:hover>span:after {
+    transition-delay: .9s;
+}
+
+.effect7 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect7:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e60023;
+    transform: translateX(-100%);
+}
+
+.effect7:after {
+    content: attr(data-content);
+    left: 0;
+    top: 0;
+    width: 0%;
+    margin: 12px;
+    color: #e60023;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width .5s ease;
+}
+
+.effect7>span {
+    display: block;
+    margin: 2px;
+    padding: 10px;
+    background: white;
+}
+
+.effect7:hover:before {
+    transform: translateX(0);
+}
+
+.effect7:hover:after {
+    width: calc(100% - 24px);
+}
+
+.effect8 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.effect8:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e60023;
+    transform: translateY(-100%);
+}
+
+.effect8:after {
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 12px;
+    color: #e60023;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.effect8>span {
+    display: block;
+    margin: 2px;
+    padding: 10px;
+    background: white;
+}
+
+.effect8:hover:before {
+    transform: translateY(0);
+}
+
+.effect8:hover:after {
+    height: calc(100% -24px);
+}
+
+.effect9 {
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.effect9:after {
+    background: #e60023;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top:0%;
+}
+
+.effect9:hover:after {
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.effect10{
+    padding: 4px;
+    background:transparent;
+    display:inline-block;
+    overflow: hidden;
+}
+.effect10:before{
+    
+    background: #e60023;
+    left: -100%;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.effect10:after{
+    background: white;
+    left: 100%;
+    z-index: -1;
+    width: 96%;
+    height:78%;
+}
+
+.effect10:hover:after{
+    transform: translateX(-102%);
+}
+
+.effect10:hover:before{
+    transform: translate(100%,100%);
+}
