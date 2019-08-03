@@ -1,0 +1,140 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin-top: 200px;
+    background: #333;
+    font-family: 'Staatliches', cursive;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5em;
+    perspective: 100em;
+}
+
+.carousel {
+    position: relative;
+    width: 15em;
+    height: 15em;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: transform 0.5s ease;
+}
+
+.carousel[data-slide="1"] {
+    transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+.carousel[data-slide="2"] {
+    transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+}
+
+.carousel[data-slide="3"] {
+    transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+
+.carousel[data-slide="4"] {
+    transform: rotateY(-270deg);
+    -moz-transform: rotateY(-270deg);
+}
+
+.slides {
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    background: white;
+}
+
+.slides img {
+    width: 100%;
+}
+
+.back,
+.slides:nth-child(3) {
+    transform: translateZ(-7.5em) rotateY(180deg);
+}
+
+.right,
+.slides:nth-child(2) {
+    transform: rotateY(-270deg) translateX(7.5em);
+    transform-origin: top right;
+}
+
+.left,
+.slides:nth-child(4) {
+    transform: rotateY(270deg) translateX(-7.5em);
+    transform-origin: center left;
+}
+
+.front,
+.slides:nth-child(1) {
+    transform: translateZ(7.5em);
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 6em;
+    margin-top: -2.5em;
+    border-radius: 3px;
+    background: #212121;
+    text-align: center;
+    line-height: 3;
+    letter-spacing: 5px;
+    color: white;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev:hover {
+    background: #e60023;
+}
+
+.prev {
+    left: 0;
+}
+
+.next:hover {
+    background: #e60023;
+}
+
+.cf:before,
+.slides:before,
+.cf:after,
+.slides:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after,
+.slides:after {
+    clear: both;
+}
+
+.cf,
+.slides {
+    *zoom: 1;
+}
