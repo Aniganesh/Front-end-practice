@@ -1,0 +1,34 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+}
+
+.bor {
+    display: inline-block;
+    width: 24.1vw;
+    height: 49vh;
+    margin: 1px;
+}
+
+.border1 {
+    background: linear-gradient(to bottom right, #e60, black);
+    border-radius: 0% 100% 100% 0% / 100% 50% 50% 0%
+}
+
+.border2 {
+    background: linear-gradient(to top right, #6e3, black);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.border3 {
+    background: linear-gradient( to top left, #60e, black);
+    border-radius: 0% 100% 30% 70% / 0% 71% 29% 100%;
+}
+
+.border4 {
+    background: linear-gradient( to bottom right, #ee6, black);
+    border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+}
