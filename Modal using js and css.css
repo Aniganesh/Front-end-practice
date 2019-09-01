@@ -1,0 +1,55 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --modal-background: linear-gradient(125deg, #f66, #ff6);
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bg {
+    display: none;
+}
+
+#open-modal {
+    width: max-content;
+    height: max-content;
+    padding: 3px;
+    margin: auto;
+}
+
+.modal {
+    display: none;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    box-shadow: 0 0 10px 1px #333;
+    border: 1px solid blue;
+    border-radius: 15px;
+    background: var(--modal-background);
+}
+
+.modal-header {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-size: 16pt;
+    border-top: inherit;
+    border-radius: inherit;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+}
+
+.modal-body {
+    padding: 3%;
+    border-bottom: inherit;
+    border-radius: inherit;
+}

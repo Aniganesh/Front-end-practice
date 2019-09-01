@@ -5,7 +5,7 @@
 }
 
 .bg1 {
-  animation: 15s changebg ease infinite;
+  animation: 15s changebg linear infinite;
 }
 
 .bg2 {
