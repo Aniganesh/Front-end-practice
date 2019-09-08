@@ -1,0 +1,70 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [col-1-start] 24% [col-1-end] auto [col-2-start] 24% [col-2-end] auto [col-3-start] 24% [col-3-end] auto [col-4-start] 24% [col-4-end] auto;
+    grid-template-rows: [row-1-start] 47vh [row-1-end] 2vh [row-2-start] 47vh [row-2-end] 2vh;
+}
+
+.item {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    text-overflow: clip;
+}
+
+.item>h2 {
+    color: Darkblue;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkblue;
+}
+
+.button {
+    margin: 3px;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: #049372;
+    color: white;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+.item:hover {
+    background: #f1f1f1;
+    box-shadow: 0px 0px 6px #000;
+}
+
+.col-1 {
+    grid-column-start: col-1-start;
+    grid-column-end: col-1-end;
+}
+
+.col-2 {
+    grid-column-start: col-2-start;
+    grid-column-end: col-2-end;
+}
+
+.col-3 {
+    grid-column-start: col-3-start;
+    grid-column-end: col-3-end;
+}
+
+.col-4 {
+    grid-column-start: col-4-start;
+    grid-column-end: col-4-end;
+}
+
+.a {
+    grid-row-start: row-1-start;
+    grid-row-end: row-1-end;
+}
+
+.b {
+    grid-row-start: row-2-start;
+    grid-row-end: row-2-end;
+}
