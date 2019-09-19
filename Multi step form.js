@@ -10,9 +10,9 @@ var progress = document.getElementById('progress');
 
 
 var questions = [
-    { question: "Your first name?" },
+    { question: "Your first name?", value: "" },
     { question: "Your last name?" },
-    { question: "your email address?", type: "email" },
+    { question: "your email address?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
     { question: "Create a password", type: "password" }
 ];
 
@@ -41,9 +41,9 @@ function showCurrent(callback) {
 function done() {
     form.className = 'close';
     var h1 = document.createElement('h1');
-    h1.appendChild(document.createTextNode('Welcome' + questions[0].value + "!"));
+    h1.appendChild(document.createTextNode('Welcome ' + questions[0].value + "!"));
     setTimeout(function () {
-        form.parentElement.appendchild(h1);
+        form.parentElement.appendChild(h1);
         setTimeout(function () { h1.style['opacity'] = 1 }, 50);
     }, eTime);
 }
@@ -51,11 +51,11 @@ function done() {
 function validate() {
     questions[position].value = txtfield.value;
 
-    if (!txtfield.value.match(/.+/)) { wrong(); } else {
+    if (!txtfield.value.match(questions[position].pattern || /.+/)) { wrong(); } else {
         ok(function () {
-            position +=1;
-            progress.style.width = position * 100 / questions.length + 'vw';
-            if (questions[position]){ hideCurrent(putQuestion);}
+            position += 1;
+            progress.style['width'] = (position * 100 / 4) + 'vw';
+            if (questions[position]) { hideCurrent(putQuestion); }
             else hideCurrent(done);
         });
     }
@@ -82,17 +82,18 @@ function transform(x, y) {
 
 function ok(callback) {
     form.className = '';
-    setTimeout(transform, tTime * 0, 0, 10)
-    setTimeout(transform, tTime * 1, 0, 0)
-    setTimeout(callback, tTime * 2)
+    setTimeout(transform, tTime * 0, 0, 10);
+    setTimeout(transform, tTime * 1, 0, 0);
+    setTimeout(callback, tTime * 2);
 }
 
 function wrong(callback) {
-    form.className = 'wrong'
-    for (var i = 0; i < 6; i++)
-        setTimeout(transform, tTime * i, (i % 2 * 2 - 1) * 20, 0)
-    setTimeout(transform, tTime * 6, 0, 0)
-    setTimeout(callback, tTime * 7)
+    form.className = 'wrong';
+    for (var i = 0; i < 6; i++) {
+        setTimeout(transform, tTime * i, (i % 2 * 2 - 1) * 20, 0);
+    }
+    setTimeout(transform, tTime * 6, 0, 0);
+    setTimeout(callback, tTime * 7);
 }
 
 (function () {

@@ -10,9 +10,11 @@ body {
 progress {
     top: 0;
     position: fixed;
-    background: #ff3d3d;
+    background: black;
     width: 0;
     height: 20px;
+    opacity: 1;
+    z-index:100;
     transition: width 0.2s linear;
 }
 
