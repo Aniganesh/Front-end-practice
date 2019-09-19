@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background: #e62323;
+    font-family: 'Lato', Sans-serif;
+}
+[input]{
+    color: black !important;
+}
+
+progress {
+    top: 0;
+    position: fixed;
+    background: #ff3d3d;
+    width: 0;
+    height: 20px;
+    transition: width 0.2s linear;
+}
+
+h1 {
+    color: #222;
+}
+
+.centre {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 2px 15px 20px 15px;
+    color: #222;
+    position: relative;
+    width: 410px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    transition: transform .2s ease;
+    border-radius: 30px;
+}
+
+form.close {
+    width: 0;
+    padding: 0;
+    transition: .8s linear;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .0);
+}
+
+.next {
+    position: absolute;
+    right: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #ff3d3d;
+    float: right;
+    cursor: pointer;
+}
+#btn:after {
+    content: '→';
+}
+.next:hover {
+    color: #333;
+}
+
+.wrong .next {
+    color: #ff2d26;
+}
+
+.close .next {
+    color: #fff;
+}
+
+#container {
+    position: relative;
+    opacity: 0;
+    width: 350px;
+    margin-top: 25px;
+    transition: opacity .3s ease-in-out;
+}
+
+#container input {
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#placeholder {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: .2s ease-in-out;
+}
+
+#container input:valid+#placeholder {
+    top: -15px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #333;
+}
+
+#bottomline {
+    position: absolute;
+    border-bottom: 2px solid #ff3d3d;
+    padding: 3px 0;
+    width: 0;
+    left: 5px;
+    transition: width .6s ease-in-out;
+}
+
+.wrong #bottomline {
+    border-color: #ff2d26;
+}
