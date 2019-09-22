@@ -2,32 +2,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(-120deg, rgb(77, 148, 88), rgb(77, 168, 88));
+}
+
 .container {
     display: flex;
     min-height: 100vh;
     height: 100%;
 }
 
-#rhombus {
-    position: absolute;
-    left: 45.02%;
-    top: 42.5%;
-    z-index: 0;
-    width: 141.421356px;
-    height: 141.421356px;
-    /*
-        The above height and width are chosen to fit insid the circle of radius 100px i.e., 50% of the square of side 200px.
-        200 px is the length of the side of the square from which the circle is formed. To draw a square inside a circle,
-        take two diameters which are at right angles to each other. Join the ends of the diameters. The resultant square can be divided in to
-        4 right angled triangles.
-        The length of the hypotenuse of these triangles is the length of the side of the square we need.
-        This can be found by Pythagoras theorem. square(r) +square(r) = square(hypotenuse).
-    */
-    background: rgba(255, 255, 255, 0.3);
-    margin: auto;
-    border: 0px solid black;
-    transform: translate(23px, 10px) rotate(45deg);
-}
 
 #loading {
     z-index: -1;
