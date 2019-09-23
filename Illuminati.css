@@ -1,0 +1,64 @@
+body {
+    background: blue;
+}
+
+.container {
+    display: flex;
+    min-width: 99vw;
+    min-height: 98vh;
+}
+
+.centred {
+    margin: auto;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.2px solid rgba(255, 255, 0, 1);
+}
+
+.triangle {
+    transform: translateX(22vw);
+}
+
+.eye {
+    font-size: 4.5rem;
+    transform: translateY(1vh) translateX(-27.5vw);
+}
+
+.triangle, .eye {
+    animation: appear ease 3s 2;
+}
+
+#text {
+    position: absolute;
+    top: 60vh;
+    left: 43.5vw;
+    font-size: 1.2rem;
+}
+
+#illuminati {
+    animation: grow ease 3s 2;
+}
+
+@keyframes grow {
+    from {
+        font-size: 1.2rem;
+    }
+    to {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
