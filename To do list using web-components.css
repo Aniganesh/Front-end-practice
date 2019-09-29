@@ -1,0 +1,29 @@
+body{
+    background: black;
+}
+
+.container{
+    min-width: 99.01vw;
+    min-height: 98.4vh;
+    display: flex;
+}
+
+.beautiful{
+    margin:auto;
+    flex-basis: 350px;
+    border-radius: 10px;
+    background-color: #ff4500;
+    font-family: 'sans-serif';
+    max-width: 500px;
+    box-shadow: 10px 20px 30px #ff45008c;
+    color: white;
+}
+
+.beautiful todo-li{
+    padding: 8px 16px 8px 8px;
+    cursor: pointer;
+}
+
+.beautiful todo-li:hover{
+    color:black;
+}
