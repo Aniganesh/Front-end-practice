@@ -1,0 +1,82 @@
+body {
+    background: #fe3535;
+}
+
+.container {
+    display: flex;
+    width: 99vw;
+    height: 98vh;
+}
+
+.centred {
+    margin: auto;
+}
+
+.no-border {
+    border: 0px solid transparent;
+}
+
+#email {
+    width: 225px;
+    padding: 1.1rem;
+    border-radius: 40px 0 0 40px;
+}
+
+#button {
+    width: 100px;
+    padding: 1.1rem;
+    border-radius: 0 40px 40px 0;
+    text-overflow: clip;
+}
+
+#button:hover {
+    background: #aaa;
+}
+
+.inline {
+    display: inline;
+}
+
+.clear {
+    animation: clear 4s linear;
+    animation-iteration-count: 1;
+}
+
+.rocket {
+    width: 100px;
+    height: 100px; 
+    animation: rocket-launch 4s linear;
+    transform: rotate(90deg) translateX(50px);
+    position: absolute;
+}
+
+@keyframes rocket-launch {
+    from {
+        left: 55%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes clear {
+    from {
+        opacity: 1;
+        
+    }
+    to {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-width:372px) {
+    #button {
+        border-radius: 13px;
+    }
+    #email {
+        border-radius: 13px;
+        margin-right: 4px;
+        margin-bottom: 5px;
+    }
+}
