@@ -2,6 +2,9 @@
   width: 45vw;
   margin: 1.25vw 1.25vh;
   height: 45vh;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6.75% 6.75% 6.75% 6.75%/12.5% 12.5% 12.5% 12.5%;
 }
 
 .bg1 {
@@ -172,10 +175,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-.container * {
-  display: inline-block;
-  border: 1px solid transparent;
-  border-radius: 6.75% 6.75% 6.75% 6.75%/12.5% 12.5% 12.5% 12.5%;
 }
