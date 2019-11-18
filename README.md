@@ -34,4 +34,9 @@ Trying out a few front end techniques.
 	<p>Sets background to 2 radial gradients with two colour stop pairs(#ff8855 to transparent and #22ff22 to transparent) and animation to  <a href="#change-radialbg2"><code>change-radialbg2</code></a></p>
 	<h3>Explanation for css @keyframes animations:</h3>
 	<h4 id="changebg">changebg</h4><p>Sets linear-gradient with 4 different colour stop pairs from left to right. </p>
-	
+	<h4 id="changebg-moving">changebg-moving</h4>
+	<p>Simply moves the background position from  0% 50% coordinates to 100% 50% and back.</p>
+	<h4 id="change-radialbg">change-radialbg</h4>
+	<p>Moves the circle from bottom right corner to top left corner with steps of 6.25%</p>
+	<h4 id="change-radialbg2">change-radialbg2</h4>
+	<p>Moves the ellipses from one side to the other in steps of 6.25%</p>
