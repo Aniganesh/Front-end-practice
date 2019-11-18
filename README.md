@@ -5,8 +5,9 @@ Trying out a few front end techniques.
 ## Table of Contents
 
 1. [Animated background](#animated-bg)
+2. [BOILER PLATE](#boiler-plate)
 
-  ## Animated background
+  <h2 id="animated-bg"> Animated background
 
   A simple sample of four animated backgrounds using css animations and radial backgrounds. Files:
 
@@ -62,3 +63,6 @@ Sets linear-gradient with 4 different colour stop pairs from left to right.
 ### change-radialbg2
 
  Moves the ellipses from one side to the other in steps of 6.25%.
+
+
+<h2 id="boiler-plate"> BOILER PLATE</h2>
