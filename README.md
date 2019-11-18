@@ -1,15 +1,12 @@
 # Front-end-practice
 Trying out a few front end techniques.
-
 <h2 id="table-of-contents"> Table of Contents</h2>
 <ol>
 	<li id="animated-bg">[Animated background](#animated-bg)</li></a>
 </ol>
- 
  <h2 id="animated-bg">Animated background </h2><br />
  A simple sample of four animated backgrounds using css animations and radial backgrounds.
  Files:
- 
 	* [Animated Background.css](https://github.com/Aniganesh/Front-end-practice/blob/master/Animated%20Background.css)
 	* [Animated Background.html](https://github.com/Aniganesh/Front-end-practice/blob/master/Animated%20Background.html)
 	
