@@ -7,7 +7,7 @@ Trying out a few front end techniques.
 1. [Animated background](#animated-bg)
 2. [BOILER PLATE](#boiler-plate)
 
-  <h2 id="animated-bg"> Animated background
+  <h2 id="animated-bg"> Animated background</h2>
 
   A simple sample of four animated backgrounds using css animations and radial backgrounds. Files:
 
