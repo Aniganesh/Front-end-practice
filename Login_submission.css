@@ -1,0 +1,75 @@
+body {
+    background: #e60023;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.centred {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.clear {
+    animation: clear 4s linear;
+    animation-iteration-count: 1;
+}
+
+.success {
+    position: relative;
+    font-size: 2rem;
+    left: 104px;
+    top: 132px;
+}
+
+.spl {
+    animation: appear 2s linear;
+    animation-iteration-count: 1;
+    animation-delay: -0.35s;
+    border: 1px solid black;
+    border-radius: 50% 100% 40% 60% / 50% 60% 40% 100%;
+    background: radial-gradient(ellipse at center, plum, purple);
+}
+
+.form-input {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+button.form-input {
+    background-color: black;
+    color: white;
+}
+
+button.form-input:hover {
+    background-color: #333;
+}
+
+@keyframes clear {
+    from {
+        opacity: 1;
+    }
+    to {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 1;
+    }
+}

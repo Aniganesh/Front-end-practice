@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form submission</title>
+    <link rel="stylesheet" href="BOILER PLATE.css" />
+    <link rel="stylesheet" href="Login_submission.css" />
+    <script src="Login_submission.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="centred">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-input" id="uname" placeholder="Enter your username" required />
+            <label for="password">Password:</label>
+            <input type="password" class="form-input" id="password" placeholder="Enter your password" required />
+            <button type="button" class="form-input" id="button" onclick="success(this)">Successful login</button>
+            <button type="button" class="form-input" id="button2" onclick="fail(this)">Failed login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

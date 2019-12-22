@@ -1,0 +1,25 @@
+"use strict";
+const canvas = document.querySelector('#canvas');
+const context = canvas.getContext('2d');
+context.beginPath();
+context.moveTo(15, 5);
+context.lineTo(95, 5);
+context.quadraticCurveTo(105, 5, 105, 15);
+context.lineTo(105, 95);
+context.quadraticCurveTo(105, 105, 95, 105);
+context.lineTo(15, 105); context.quadraticCurveTo(5, 105, 5, 95);
+context.lineTo(5, 15);
+context.quadraticCurveTo(5, 5, 15, 5);
+context.closePath();
+context.fillStyle = "yellow";
+context.fill();
+context.strokeStyle = "royalblue";
+context.lineWidth = 6;
+context.stroke();
+
+context.beginPath();
+context.moveTo(315, 20);
+context.bezierCurveTo(212, 37, 376, 77, 232, 133);
+context.lineWidth = 10;
+context.strokeStyle = "red";
+context.stroke();
