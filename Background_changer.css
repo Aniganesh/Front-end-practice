@@ -1,0 +1,54 @@
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+}
+
+.block {
+    width: 35vw;
+    height: 35vw;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+}
+
+.centred {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width: 110px;
+    cursor: pointer;
+    border: 0px solid transparent;
+    border-radius: 0.3rem;
+    padding: 0.8rem 0.4rem;
+}
+
+.button:hover {
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.spl {
+    position: relative;
+    right: 40vw;
+    top: 45vh;
+}
+
+@media only screen and (max-width:480px) {
+    .spl {
+        right: 45vw;
+    }
+}
