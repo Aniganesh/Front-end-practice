@@ -2,7 +2,8 @@
 
 const container = document.querySelector(".container");
 container.addEventListener("click", (e) => {
-    e.target.parentElement.style = "background-color:" + getRandomColourHex() + ";";
+    if ([...e.target.classList].includes("button"))
+        e.target.parentElement.style = "background-color:" + getRandomColourHex() + ";";
 });
 
 function getRandomColourHex() {
