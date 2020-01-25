@@ -1,0 +1,1 @@
+background: radial-gradient(ellipse at bottom 0 left 10px,  #fed670, #d42e6d, transparent),              radial-gradient(ellipse at top 0 left 10px, #4955c0, #9a2ebd);

@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round&display=swap);
+body {
+    background: radial-gradient(ellipse at bottom 0 left 10px, #fed670, #d42e6d, transparent), radial-gradient(ellipse at top 0 left 10px, #4955c0, #9a2ebd);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.full {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#quiz-container {
+    border: 0 solid transparent;
+    border-radius: 2rem;
+    max-width: 300px;
+}
+
+.centred {
+    margin: auto;
+}
+
+.max-parent-width {
+    width: 100%;
+}
+
+#question {
+    padding: 1rem;
+    color: white;
+    background: #333333;
+    border: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.opt-group {
+    width: 100%;
+    background: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: inherit;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.ans-pill {
+    border: 1px solid lightgrey;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+[data-correct] {
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+}
+
+.correct {
+    background: #35b358;
+}
+
+.end {
+    border: 1px solid transparent;
+    transform: scale(1.02, 1.02);
+    color: white
+}
+
+.wrong {
+    background: #c35358;
+}
+
+.indicator {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.confetti-rect {
+    position: absolute;
+    height: 10px;
+    width: 20px;
+}
+
+.confetti-round {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border: 0px solid transparent;
+    border-radius: 50%;
+}
+
+.purple-bg {
+    background: #75108f;
+}
+
+.yellow-bg {
+    background: #f9fc41;
+}
+
+.red-bg {
+    background: #ec2727;
+}
+
+.shake {
+    animation: 0.5s ease shake;
+}
+
+.conf-movement {
+    animation: 0.5s ease conf-movement reverse;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+.conf-movement1 {
+    animation: 0.5s ease conf-movement1 reverse;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+#confetti-container {
+    position: relative;
+    max-width: 400px;
+    max-height: 700px;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotateZ(10deg) scale(1.05);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    75% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes conf-movement {
+    100% {
+        top: 100%;
+        right: 0%;
+    }
+}
+
+@keyframes conf-movement1 {
+    100% {
+        top: 100%;
+        left: 0%;
+    }
+}
+
+@keyframes conf-end {
+    100% {
+        top: 100%;
+    }
+}
