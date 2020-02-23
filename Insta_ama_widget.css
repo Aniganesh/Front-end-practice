@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round&display=swap);
+body {
+    background: radial-gradient(ellipse at bottom 0 left 10px, #fed670, #d42e6d, transparent), radial-gradient(ellipse at top 0 left 10px, #4955c0, #9a2ebd);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.full {
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.question-container {
+    padding-top: 25px;
+    width: 250px;
+    background: white;
+    position: relative;
+    /* border: 0px solid transparent; */
+    border-radius: 1.1rem;
+}
+
+.profile-image {
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -25%;
+}
+
+.question {
+    background: linear-gradient(-45deg, #d42e6d, #4955c0);
+    background-clip: text;
+    font-size: 1.5rem;
+    text-align: center;
+    color: transparent;
+    font-weight: bold;
+}
+
+.answer-space {
+    border: 0 solid transparent;
+    background: lightgrey;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.send-button {
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 0.5rem;
+    background: #3897f0;
+    display: none;
+    cursor: pointer;
+}
+
+.sent {
+    background: #6dc04e;
+}
+
+.shrink {
+    animation: shrink 200ms linear;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes shrink {
+    100% {
+        transform: scale(0.9, 0.9);
+    }
+}
