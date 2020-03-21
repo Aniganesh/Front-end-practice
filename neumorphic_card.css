@@ -1,0 +1,43 @@
+.full-screen {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body {
+    background: lightseagreen;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.centred{
+    margin: auto;
+}
+
+.card {
+    margin: 2rem;
+    max-width: 400px;
+    padding: 1rem;
+    border: 0.5px solid rgba(255,255,255,0.3);
+    box-shadow: -5px 0 8px 4px #ffffff45, 0 -5px 8px 4px #ffffff45, 5px 0 8px 4px teal, 0 5px 8px 4px teal;
+}
+.card-inset {
+    margin: 2rem;
+    max-width: 400px;
+    padding: 1rem;
+    border: 0.5px solid rgba(255,255,255,0.3);
+    box-shadow: -5px 0 8px 4px #ffffff45 inset, 0 -5px 8px 4px #ffffff45 inset, 5px 0 8px 4px teal inset, 0 5px 8px 4px teal inset;
+}
+.card-text{
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.rounded{
+    border-radius: 1rem;
+}
