@@ -12,10 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
 }
 
-.centred{
+.centred {
     margin: auto;
 }
 
@@ -23,21 +22,39 @@ body {
     margin: 2rem;
     max-width: 400px;
     padding: 1rem;
-    border: 0.5px solid rgba(255,255,255,0.3);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
     box-shadow: -5px 0 8px 4px #ffffff45, 0 -5px 8px 4px #ffffff45, 5px 0 8px 4px teal, 0 5px 8px 4px teal;
 }
+
 .card-inset {
     margin: 2rem;
     max-width: 400px;
     padding: 1rem;
-    border: 0.5px solid rgba(255,255,255,0.3);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
     box-shadow: -5px 0 8px 4px #ffffff45 inset, 0 -5px 8px 4px #ffffff45 inset, 5px 0 8px 4px teal inset, 0 5px 8px 4px teal inset;
 }
-.card-text{
+
+.card-text {
     margin: 1rem;
     font-size: 1.1rem;
 }
 
-.rounded{
+.rounded {
     border-radius: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: -5px 0 8px 4px rgba(255, 255, 255, 0.3), 0 -5px 8px 4px rgba(255, 255, 255, 0.3), 5px 0 8px 4px teal, 0 5px 8px 4px teal;
+    border-radius: 1rem;
+    transition: box-shadow 10s ease;
+}
+
+button:hover {
+    background: rgb(0,150,150);
+}
+
+button:active {
+    box-shadow: -5px 0 8px 4px rgba(255, 255, 255, 0.3) inset, 0 -5px 8px 4px rgba(255, 255, 255, 0.3) inset, 5px 0 8px 4px teal inset, 0 5px 8px 4px teal inset;
 }
